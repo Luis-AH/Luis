@@ -2,19 +2,34 @@
 <html>
   <head>
     <style>
+      body{
+      margin: 0 auto;
+      background-image: url("pattern.png");
+      }
       .pagina {
         display: flex;
         justify-content: center;
+        width: 10px;
       }
 
       .cabeza {
-        background-color: #9c74e7;
+        background-color: #A593C2;
+        padding: 5px 50px;
       }
-      body {
-        background-image: url("pattern.png");
+      .contenido_cabeza {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      z-index: 100;
+      }
+      .todo{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
       }
       .titulo {
-        color: #9c74e7;
+        color: #A593C2;
         line-height: 1;
         font-family: arial;
         font-size: 35px;
@@ -22,6 +37,7 @@
       .pa1 {
         line-height: 1;
         font-family: arial;
+        width: 500px;
       }
       .sub {
         line-height: 1;
@@ -38,77 +54,95 @@
         font-family: arial;
         font-size: 13px;
       }
+      
     </style>
-  </head>
   <header class="cabeza">
-    <img src="pie.png" alt="cake" height="49" width="49" />
+    <div class="contenido_cabeza">
+      <img src="pie.png" alt="cake" height="56" width="56" />
+    </div>
   </header>
   <body>
-    <div class="pagina">
-      <div>
-        <img src="bethanylogo.png" alt="cake" height="250" width="250" />
-        <p class="pa1"><strong>Browse our pies</strong></p>
-        <p>
-          <br />
-          <input type="text" placeholder="ingresa" /> <br />
-        </p>
+    <div class="todo">
+      <div class="pagina">
+        <div>
+          <img src="bethanylogo.png" alt="cake" height="250" max-width="250" />
+          <p class="pa1"><strong>Browse our pies</strong></p>
+          <p>
+            <input type="text" placeholder="ingresa" /> <br />
+          </p>
+        </div>
       </div>
-      <div id="inicio">
-        <section id="page">
-          <main>
-            <article>
-              <h2 class="titulo">Welcome to Bethany's Pie Shop</h2>
-            </article>
-            <img src="bethany.jpg" alt="bethy" height="304" width="660" />
-            <p class="pa1">Bethany in our pie shop</p>
-            <p><a href="https://luis-ah.github.io/Trabajo1/" target="_blank" rel="nofollow">
-              información acerca de mi </a></p> 
-            <p><a href="https://luis-ah.github.io/Pagina3/" target="_blank" rel="nofollow">
-              Página de contacto</a></p>
-
-            <article>
-              <h2 class="sub">Our history</h2>
-              <p class="pa1">
-                For many years, Bethany has been baking the most delicious pies
-                at her home. In 2013, we opened our first store in Brussels
-                (Belgium) in a cosy little street near the Grand Market. People
-                from all over the world fell in love with the soft cakes,
-                heavenly cheese cakes, spicy apple pies... The store became a
-                success in no time.
+        <div cla="inicio">
+          <section id="page">
+            <main>
+              <article>
+                <h2 class="titulo">Welcome to Bethany's Pie Shop</h2>
+              </article>
+              <img src="bethany.jpg" alt="bethy" height="304" width="660" />
+              <p class="pa1">Bethany in our pie shop</p>
+              <p>
+                <a
+                  href="https://luis-ah.github.io/Trabajo1/"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  información acerca de mi
+                </a>
               </p>
-              <p class="pa1">
-                In 2015, no less than 100 pies were sold every day and Bethany's
-                Pie Shop moved into a larger building. After receiving many
-                requests, it became clear that our next step was making it
-                possible to order pies from the comfort of your own home and
-                from anywhere in the world. You are now looking at the result of
-                this: our very own webstore, making it possible to order
-                Bethany's delicious pies whenever you feel like it!
+              <p>
+                <a
+                  href="https://luis-ah.github.io/Pagina3/"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  Página de contacto</a
+                >
               </p>
-              <p class="pa1">
-                Bethany is famous for using only the best ingredients. This way,
-                we can make sure that our pies are absolutely the best.
-              </p>
-            </article>
-            <article>
-              <h2 class="sub">Our weekly products</h2>
-              <p class="pa1"><strong>cheese cake</strong></p>
-              <p class="pa1">$12.95 - serves 4</p>
-              <img
-                src="cheesecake.jpg"
-                alt="Cheesecake"
-                height="250"
-                width="400"
-              />
-            </article>
-          </main>
-        </section>
-      </div>
+  
+              <article>
+                <h2 class="sub">Our history</h2>
+                <p class="pa1">
+                  For many years, Bethany has been baking the most delicious pies
+                  at her home. In 2013, we opened our first store in Brussels
+                  (Belgium) in a cosy little street near the Grand Market. People
+                  from all over the world fell in love with the soft cakes,
+                  heavenly cheese cakes, spicy apple pies... The store became a
+                  success in no time.
+                </p>
+                <p class="pa1">
+                  In 2015, no less than 100 pies were sold every day and Bethany's
+                  Pie Shop moved into a larger building. After receiving many
+                  requests, it became clear that our next step was making it
+                  possible to order pies from the comfort of your own home and
+                  from anywhere in the world. You are now looking at the result of
+                  this: our very own webstore, making it possible to order
+                  Bethany's delicious pies whenever you feel like it!
+                </p>
+                <p class="pa1">
+                  Bethany is famous for using only the best ingredients. This way,
+                  we can make sure that our pies are absolutely the best.
+                </p>
+              </article>
+              <article>
+                <h2 class="sub">Our weekly products</h2>
+                <p class="pa1"><strong>cheese cake</strong></p>
+                <p class="pa1">$12.95 - serves 4</p>
+                <img
+                  src="cheesecake.jpg"
+                  alt="Cheesecake"
+                  height="250"
+                  width="400"
+                />
+              </article>
+            </main>
+          </section>
+        </div>
     </div>
-  </body>
-  <footer>
-    <p class="f2">Our address is</p>
-    <p class="f1">Bethany's Pie shop - La fontana Avenue 1156, La Molina</p>
-    <p class="f2">2020 Bethany's Pie Shop - All rigths reserved</p>
-  </footer>
+    <div class="foot">
+      <footer>
+        <p class="f2">Our address is</p>
+        <p class="f1">Bethany's Pie shop - La fontana Avenue 1156, La Molina</p>
+        <p class="f2">2020 Bethany's Pie Shop - All rigths reserved</p>
+      </footer>
+    </div> 
 </html>
